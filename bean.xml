@@ -1,0 +1,21 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans.xsd">
+      
+      <bean id="c1bean" class="Lab5.classOne">
+      	<!-- 
+      	<property name="name" value="Kishan"/>
+		<property name="age" value="23"/>
+      	 -->
+		<property name="c2" ref="c2bean"/>
+      </bean>
+      
+      <bean id="c2bean" class="Lab5.classTwo" >
+      <!-- 
+      <property name="course" value="MCA"/>
+      <property name="college" value="RV College of Engineering"/>  
+       -->	
+      </bean>
+      
+</beans>
